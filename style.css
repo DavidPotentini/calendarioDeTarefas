@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #6e8515;
+}
+
+/*LABEL*/
+label{
+    font-size: 20px;
+    padding: 0.3rem;
+}
+/*FIM LABEL*/
+
+/*FIELDSET*/
+fieldset{
+    border: 2px solid black;
+    padding: 0 1rem;
+}
+
+fieldset legend{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+fieldset.insercao{
+    margin-bottom: 5rem;
+}
+
+fieldset.visu-busca{
+    padding: 2rem;
+}
+
+
+
+/*FIM FIELDSET*/
+
+.preencher-tarefas #dia{
+    border-radius: 14px;
+    height: 3rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.preencher-tarefas #mes{
+    border-radius: 14px;
+    height: 3rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.preencher-tarefas #semana{
+    border-radius: 14px;
+    height: 3rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+
+.preencher-tarefas #busca{
+    border-radius: 14px;
+    height: 3rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.preencher-tarefas #titulo{
+    border-radius: 14px;
+    height: 3rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.preencher-tarefas #data{
+    border-radius: 14px;
+    height: 3rem;
+    width: 15rem;
+    font-size: 30px;
+}
+
+.preencher-tarefas #hora{
+    border-radius: 14px;
+    height: 3rem;
+    width: 15rem;
+    font-size: 30px;
+}
+
+.preencher-tarefas #duracao{
+    border-radius: 14px;
+    height: 3rem;
+    width: 15rem;
+    font-size: 30px;
+}
+
+.preencher-tarefas #semana{
+    width: fit-content;
+}
+
+.preencher-tarefas #mes{
+    width: fit-content;
+}
+
+.dataehora{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hora{
+    display: flex;
+    flex-direction: column;
+}
+
+.duracao{
+    display: flex;
+    flex-direction: column;
+}
+
+.busca{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.visualizacao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+}
+
+.dia{
+    display: flex;
+    flex-direction: column;
+}
+
+.mes{
+    display: flex;
+    flex-direction: column;
+}
+
+.semana{
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+}
+/*FIM INFORMAÇÕES TAREFA*/
+
+/*DETALHES TAREFA*/
+.informacoesLista{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 40rem;
+    margin: 1rem;
+}
+
+.informacoesLista input{
+    border-radius: 14px;
+    width: 40rem;
+    border: none;
+    
+}
+
+input.novoConteudo{
+    width: 20rem;
+}
+
+p.dataLista{
+    border-top: 1px solid black;
+}
+
+p.duracaoLista{
+    border-bottom: 1px solid black;
+}
+
+p.conteudoLista{
+    font-size: 20px;
+    word-break: break-all;
+    height: fit-content;
+}
+
+
+.tituloLista {
+    font-size: 30px;
+}
+
+.input-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.to-do-title{
+    padding: 3rem;
+}
+
+.preencher-tarefas{
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.textarea{
+    width: 60vw;
+    height: 3rem;
+    border-radius: 14px;
+    resize: none;
+    line-height: 40px;
+    font-size: 30px;
+    
+}
+
+
+.btn{
+    width: 10vw;
+    height: 3rem;
+    border-radius: 14px;
+    margin: 0 1rem;
+}
+
+.btn i{
+    font-size: 17px;
+}
+
+.output-lista{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 7rem 16rem 0rem;
+    
+}
+
+.itemLista{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 1rem;
+    width: 40rem;
+    height: fit-content;
+    border-radius: 14px;
+    line-height: 36px;
+    font-size: 30px;
+}
+
+.btnTarefaConcluida{
+    height: 2rem;
+    width: 5rem;
+    background-color: white;
+    border-radius: 14px;
+    border: none;
+    transition: 0.2s;
+}
+
+.btnExcluirTarefa{
+    height: 2rem;
+    width: 5rem;
+    background-color: white;
+    border-radius: 14px;
+    border: none;
+    transition: 0.2s;
+}
+
+.btnEditarTarefa{
+    height: 2rem;
+    width: 5rem;
+    background-color: white;
+    border-radius: 14px;
+    border: none;
+    transition: 0.2s;
+}
+
+.btnExcluirTarefa:hover{
+    background-color: red;
+}
+
+.btnTarefaConcluida:hover{
+    background-color: green ;
+}
+
+.btnEditarTarefa:hover{
+    background-color: rgb(41, 41, 247);
+}
+
+.linha{
+    text-decoration: line-through;
+}
+
+
+/*FIM DETALHES TAREFA*/
+
+
+
+
+
+

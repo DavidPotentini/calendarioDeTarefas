@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="input-lista">
+    <div class="to-do-title"><h1>To Do List</h1></div>
+
+    <div class="preencher-tarefas">
+        <fieldset class="insercao">
+            <legend>Inserção de Tarefas</legend>
+            <div class="titulo">
+                <label for="titulo">Titulo:</label>
+            <input type="text" name="Titulo" id="titulo">
+            </div>
+
+            <div class="dataehora">
+                <div class="data">
+                    <label for="data">Data:</label>
+                    <input type="date" nome="data" id="data" min="2024-01-01" max="2026-12-31">
+                </div>
+
+                <div class="hora">
+                    <label for="hora">Hora:</label>
+                    <input type="time" nome="hora" id="hora"> 
+                </div>
+
+                <div class="duracao">
+                    <label for="duracao">Duracao:</label>
+                    <p>
+                    <input type="number" name="duracao" id="duracao">
+                    <label for="tempo">Minutos</label>
+                    </p>
+                </div>
+            </div>
+
+            <div class="descricao">
+                <label for="descricao">Descrição:</label>
+                <div class="conteudo">
+                <textarea name="text" class="textarea"></textarea>
+                <button class="btn"><i class="fa fa-check" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            </fieldset>
+
+            <fieldset class="visu-busca">
+                <legend>Visualização e Busca</legend>
+            <fieldset>
+                <legend>Visualizar por:</legend>
+            <div class="visualizacao">
+                <div class="dia">
+                    <label for="dia">Dia:</label>
+                    <input type="date" id="dia">
+                </div>
+                <div class="mes">
+                    <label for="mes">Mês:</label>
+                    <input type="month" id="mes">
+                </div>
+
+                <div class="semana">
+                    <label for="semana">Semana:</label>
+                    <input type="week" id="semana">
+                </div>
+            </div>
+            </fieldset>
+
+            <div class="busca">
+                <label for="busca">Busca por título:</label>
+                <input type="text" name="busca" id="busca">
+            </div>
+        </fieldset>
+        </div>
+    </div>
+
+    <div class="output-lista">
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
