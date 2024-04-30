@@ -13,6 +13,10 @@ var inputSemana = window.document.querySelector('#semana')
 
 
 botaoConfirmar.addEventListener('click', adicionarTarefa)
+inputBusca.addEventListener('input', buscaTitulo)
+inputDia.addEventListener('input', visualizacaoDia)
+inputMes.addEventListener('input', visualizacaoMes)
+inputSemana.addEventListener('input', visualizacaoSemana)
 
 function adicionarTarefa(){
     if(tituloTarefas.value == '' || dataTarefas.value == '' || horaTarefas.value == '' || duracaoTarefas.value == '' || inputTarefas.value == ''){
@@ -172,7 +176,7 @@ function excluirTarefa(informacoesLista){
     
 }
 
-inputBusca.addEventListener('input', function() {
+function buscaTitulo(){
     var textoBusca = inputBusca.value.toLowerCase()
 
     var tarefas = document.querySelectorAll('.informacoesLista')
@@ -187,9 +191,10 @@ inputBusca.addEventListener('input', function() {
             tarefa.style.display = 'none'
         }
     })
-})
+}
 
-inputDia.addEventListener('input', function(){
+
+function visualizacaoDia(){
     var tarefas = document.querySelectorAll('.informacoesLista')
 
     var diaSelecionado = inputDia.value
@@ -210,11 +215,11 @@ inputDia.addEventListener('input', function(){
             }
         })
     }
-})
+}
 
 
 
-inputMes.addEventListener('input', function(){
+function visualizacaoMes(){
     var tarefas = document.querySelectorAll('.informacoesLista')
     var mesSelecionado = inputMes.value.substring(5)
 
@@ -234,9 +239,11 @@ inputMes.addEventListener('input', function(){
         
         })
     }       
-})
+}
 
-inputSemana.addEventListener('input', function() {
+
+
+function visualizacaoSemana(){
     var semanaSelecionada = inputSemana.value
 
     if (semanaSelecionada) {
@@ -262,7 +269,7 @@ inputSemana.addEventListener('input', function() {
             tarefa.style.display = 'block'
         })
     }
-})
+}
 
 function getNumeroSemana(data) {
     var primeiroDiaDoAno = new Date(data.getFullYear(), 0, 1)
