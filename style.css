@@ -39,65 +39,11 @@ fieldset.visu-busca{
 
 /*FIM FIELDSET*/
 
-.preencher-tarefas #dia{
+.preencher-tarefas input{
     border-radius: 14px;
     height: 3rem;
     width: 15rem;
     margin-bottom: 3rem;
-    font-size: 30px;
-}
-
-.preencher-tarefas #mes{
-    border-radius: 14px;
-    height: 3rem;
-    width: 15rem;
-    margin-bottom: 3rem;
-    font-size: 30px;
-}
-
-.preencher-tarefas #semana{
-    border-radius: 14px;
-    height: 3rem;
-    width: 15rem;
-    margin-bottom: 3rem;
-    font-size: 30px;
-}
-
-
-.preencher-tarefas #busca{
-    border-radius: 14px;
-    height: 3rem;
-    width: 15rem;
-    margin-bottom: 3rem;
-    font-size: 30px;
-}
-
-.preencher-tarefas #titulo{
-    border-radius: 14px;
-    height: 3rem;
-    width: 15rem;
-    margin-bottom: 3rem;
-    font-size: 30px;
-}
-
-.preencher-tarefas #data{
-    border-radius: 14px;
-    height: 3rem;
-    width: 15rem;
-    font-size: 30px;
-}
-
-.preencher-tarefas #hora{
-    border-radius: 14px;
-    height: 3rem;
-    width: 15rem;
-    font-size: 30px;
-}
-
-.preencher-tarefas #duracao{
-    border-radius: 14px;
-    height: 3rem;
-    width: 15rem;
     font-size: 30px;
 }
 
@@ -115,27 +61,6 @@ fieldset.visu-busca{
     margin-bottom: 2.5rem;
 }
 
-.titulo{
-    display: flex;
-    flex-direction: column;
-}
-
-.data{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.hora{
-    display: flex;
-    flex-direction: column;
-}
-
-.duracao{
-    display: flex;
-    flex-direction: column;
-}
-
 .busca{
     display: flex;
     flex-direction: column;
@@ -146,22 +71,6 @@ fieldset.visu-busca{
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
-    
-}
-
-.dia{
-    display: flex;
-    flex-direction: column;
-}
-
-.mes{
-    display: flex;
-    flex-direction: column;
-}
-
-.semana{
-    display: flex;
-    flex-direction: column;
 }
 
 .descricao{
@@ -242,7 +151,6 @@ p.conteudoLista{
     resize: none;
     line-height: 40px;
     font-size: 30px;
-    
 }
 
 
@@ -263,7 +171,6 @@ p.conteudoLista{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 7rem 16rem 0rem;
-    
 }
 
 .itemLista{
@@ -323,6 +230,58 @@ p.conteudoLista{
 
 
 /*FIM DETALHES TAREFA*/
+
+@media (max-width: 1170px){
+    .preencher-tarefas input{
+        border-radius: 14px;
+        height: 2rem;
+        width: 7rem;
+        margin-bottom: 3rem;
+        font-size: 20px;
+    }
+
+    .textarea{
+        width: 15rem;
+        height: 2rem;
+    }
+
+    
+    .itemLista{
+        width: 100%;
+        height: fit-content;
+        font-size: 15px;
+    }
+
+    .output-lista{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+        
+}
+
+@media (max-width: 750px){
+    .preencher-tarefas input{
+        height: 2rem;
+        width: fit-content;
+        font-size: 20px;
+    }
+
+    .dataehora{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visualizacao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset{
+        border: 1px solid black;
+        padding: 0;
+    }
+}
 
 
 
